@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework6</title>
+</head>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color:white;
+}
+
+.container{
+    width:800px;
+    margin:20px auto;
+    background:white;
+    padding:20px;
+    border:1px solid #000;
+}
+
+fieldset{
+    margin-bottom:20px;
+    padding:20px;
+}
+
+legend{
+    font-weight:bold;
+    font-size:20px;
+    font-family: Kantumruy Pro;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-family: Kantumruy Pro;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=date],
+
+select{
+    width:100%;
+    padding:8px;
+    box-sizing:border-box;
+
+}
+
+.gender{
+    margin-top:10px;
+}
+
+.buttons{
+    text-align:center;
+}
+.submit-btn{
+    background:green;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.clear-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    font-size:16px;
+    cursor:pointer;
+}
+option{
+    font-family: Kantumruy Pro;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<form>
+<!-- Section 1 -->
+<fieldset>
+<legend style="color: darkblue;">១. ព័ត៌មានផ្ទាល់ខ្លួន</legend>
+
+<label>ឈ្មោះពេញ:</label>
+<input type="text" placeholder="បញ្ចូលឈ្មោះ" style="font-family: Kantumruy Pro;">
+
+<label>ថ្ងៃខែឆ្នាំកំណើត:</label>
+<input type="date">
+
+<label>ភេទ:</label>
+<div class="gender">
+
+<input type="radio" name="gender" id="male">
+<label for="male" style="display:inline;">ប្រុស</label>
+
+<input type="radio" name="gender" id="female">
+<label for="female" style="display:inline;">ស្រី</label>
+</div>
+
+<label>ខេត្ត/ក្រុងកំណើត:</label>
+<select style="font-family:  Kantumruy Pro;">
+
+<option>--- ជ្រើសរើសខេត្ត/រាធានី ---</option>
+<option>ភ្នំពេញ</option>
+<option>កណ្ដាល</option>
+<option>សៀមរាប</option>
+<option>បាត់ដំបង</option>
+<option>កំពង់ចាម</option>
+<option>ព្រះសីហនុ</option>
+
+</select>
+</fieldset>
+
+<!-- Section 2 -->
+
+<fieldset>
+<legend style="color: darkblue;">២. ព័ត៌មានការសិក្សា</legend>
+<label>ឆ្នាំសិក្សា:</label>
+
+<select style="font-family: Kantumruy Pro;">
+
+<option>ឆ្នាំទី ១</option>
+<option>ឆ្នាំទី ២</option>
+<option>ឆ្នាំទី ៣</option>
+<option>ឆ្នាំទី ៤</option>
+
+</select>
+
+<label>ជំនាញដែលចូលចិត្ត:</label>
+
+<input type="checkbox" id="webdev">
+<label for="webdev" style="display:inline;">Web Dev</label>
+
+<br>
+
+<input type="checkbox" id="ui/ux">
+<label for="ui/ux" style="display:inline;">UI/UX Design</label>
+
+<br>
+
+<input type="checkbox" id="network">
+<label for="network" style="display:inline;">Networking</label>
+</fieldset>
+
+<!-- Section 3 -->
+
+<fieldset>
+<legend style="color: darkblue;">៣. ព័ត៌មានទំនាក់ទំនង</legend>
+
+
+<label>អ៊ីមែល:</label>
+<input type="email" placeholder="example@email.com" style="font-family: 'Times New Roman', Times, serif;">
+
+
+<label>លេខសម្ងាត់:</label>
+<input type="password" placeholder="បញ្ចូលលេខសម្ងាត់" style="font-family: Kantumruy Pro;">
+</fieldset>
+
+<div class="buttons">
+<button type="submit" class="submit-btn" style="font-family: Kantumruy Pro;">
+រក្សាទុក (Submit)
+</button>
+
+<button type="reset" class="clear-btn" style="font-family: Kantumruy Pro;">
+សម្អាត (Clear)
+</button>
+</div>
+</form>
+</div>
+</body>
+
+</html>
